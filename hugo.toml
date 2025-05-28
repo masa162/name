@@ -1,11 +1,17 @@
-baseURL = "https://masa162.github.io/name/"
-languageCode = "ja"
-title = "（あなたのマンガのタイトルなど）"
-theme = "PaperMod"
+baseURL = "https://masa162.github.io/name/" # あなたのサイトのURL
+languageCode = "ja" # 言語を日本語に
+title = "blue moon" # サイトのタイトル
+theme = "PaperMod" # 使用するテーマ名
 
 [params]
+  # PaperModテーマ用の設定例
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  #ダークモードをデフォルトにする場合
+  #defaultTheme = "dark"
