@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main # mainブランチにpushされたら起動
+      - main
   workflow_dispatch:
 
 jobs:
@@ -14,13 +14,13 @@ jobs:
       pages: write
       id-token: write
     concurrency:
-      group: pages
+      group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true # サブモジュール（テーマ）も取得
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -43,6 +43,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: pages
