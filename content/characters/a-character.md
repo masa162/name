@@ -8,4 +8,4 @@ tags: ["主要キャラクター", "剣士"] # タグ機能
 Blue Moon Madness
 
 ## キャラクター設定画
-![設定画1](/images/Blue_Moon_Madness.png)
+![設定画1](/images/Blue_Moon_Madness_toko.jpg)
